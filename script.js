@@ -1,4 +1,4 @@
-const api_url = 'https://3ancux3lva.execute-api.eu-west-1.amazonaws.com/Prod';
+const api_url = 'https://3ancux3lva.execute-api.eu-west-1.amazonaws.com/Prod/chat';
 
 var ChatMessage = React.createClass({ displayName: "ChatMessage",
   generateClasses: function () {
