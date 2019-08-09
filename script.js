@@ -1,4 +1,4 @@
-const api_url = 'https://x0h6hvm7zc.execute-api.eu-west-1.amazonaws.com/prod';
+const api_url = 'https://3ancux3lva.execute-api.eu-west-1.amazonaws.com/Prod/chat';
 
 var ChatMessage = React.createClass({ displayName: "ChatMessage",
   generateClasses: function () {
@@ -31,11 +31,9 @@ var ChatMessageComposer = React.createClass({ displayName: "ChatMessageComposer"
   },
   onKeyPress: function (event) {
     if (event.key !== 'Enter') {return;}
-//    console.log('do we get here', this.props.messages);
     this.props.sendMessage({
       message: this.state.inputValue,
       from: 'you' });
-
     this.setState({ inputValue: '' });
   },
   handleChange: function (event) {
