@@ -1,5 +1,7 @@
 const api_url = 'https://y6la06e1xa.execute-api.eu-west-1.amazonaws.com/Prod/chat';
 
+var context = { };
+
 var ChatMessage = React.createClass({ displayName: "ChatMessage",
   generateClasses: function () {
     if (this.props.message.from === 'bot') {
@@ -49,7 +51,8 @@ var ChatMessageComposer = React.createClass({ displayName: "ChatMessageComposer"
 var Chat = React.createClass({ displayName: "Chat",
   getInitialState: function () {
     return {
-      messages: [] };
+      messages: []
+     };
   },
   addMessage: function (message) {
     this.setState(function (previousState) {
@@ -66,7 +69,7 @@ var Chat = React.createClass({ displayName: "Chat",
     });
   },
   sendMessage: function (message) {
-    let request = new Request(api_url, { method: 'POST', body: '{ "message": "' + message.message + '" }'});
+    let request = new Request(api_url, { method: 'POST', body: '{ "message": "' + message.message + '", "context": " + JSON.stringify(context) + " }'});
     let that = this;
     fetch(request).then(response => {
         if (response.status !== 200) {
@@ -76,8 +79,8 @@ var Chat = React.createClass({ displayName: "Chat",
         }
         // Examine the text in the response
         response.json().then(function(data) {
-          that.receiveMessage(data);
-          console.log(data);
+          context = data.context;
+          that.receiveMessage(data.message);
         });
       })
       .catch(function(err) {
