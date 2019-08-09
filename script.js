@@ -69,7 +69,7 @@ var Chat = React.createClass({ displayName: "Chat",
     });
   },
   sendMessage: function (message) {
-    let request = new Request(api_url, { method: 'POST', body: '{ "message": "' + message.message + '", "context": " + JSON.stringify(context) + " }'});
+    let request = new Request(api_url, { method: 'POST', body: '{ "message": "' + message.message + '", "context": ' + JSON.stringify(context) + ' }'});
     let that = this;
     fetch(request).then(response => {
         if (response.status !== 200) {
