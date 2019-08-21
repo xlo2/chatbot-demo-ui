@@ -47,6 +47,12 @@ function Documentation() {
             <td></td>
           </tr>
           <tr>
+            <td>Help</td>
+            <td style={{textAlign:'center'}}>X</td>
+            <td style={{textAlign:'center'}}>X</td>
+            <td></td>
+          </tr>
+          <tr>
             <td>Chitchat</td>
             <td style={{textAlign:'center'}}>X</td>
             <td></td>

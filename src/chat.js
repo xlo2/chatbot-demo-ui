@@ -83,8 +83,8 @@ var ChatMessageComposer = createReactClass({ displayName: "ChatMessageComposer",
 var Chat = createReactClass({ displayName: "Chat",
   getInitialState: function () {
     return {
-      messages: [ { message: "Hi! I am your banking assistant. I can speak English and French", from: 'bot' },
-        { message: "You can ask me for your current credit card limit or request modification", from: 'bot' } ],
+      messages: [ { message: "Hi! I am your credit card limit assistant. I can speak English and French", from: 'bot' },
+        { message: "You can ask me for your current credit card limit or request a modification", from: 'bot' } ],
       hints: [ { hint: "Change my card limit" }, { hint: "Quelle est la limite de ma carte ?" } ]
      };
   },
