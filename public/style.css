@@ -1,29 +1,41 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 * {
   box-sizing: border-box;
 }
-
-html {
-  background: rgba(0, 0, 0, 0.03);
-}
-body, html, #app, .chat {
+html, body, #root {
   height: 100%;
 }
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 115%;
+html, body, #root {
   display: flex;
   flex-direction: column;
-  max-width: 700px;
-  margin: 0 auto;
 }
 
 .chat {
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+@media screen and (min-width: 700px) {
+  .chat {
+    max-width: 600px;
+    position:absolute;
+    bottom: 0;
+    height: calc(100% - 80px);
+    right: 50px;
+    border: 1px solid #ccc;
+    box-shadow: 8px 8px 12px #aaa;
+  }
+}
+.chat-hints {
+  padding: 20px;
+}
+.chat-hints:empty {
+  padding: 0px;
+}
+.chat-hints > button::first-letter {
+  text-transform: uppercase;
 }
 .chat-output {
-  flex: 1;
+  flex: 1 0 0;
   padding: 20px;
   display: flex;
   background: white;
@@ -53,12 +65,12 @@ body {
 .chat-input {
   padding: 20px;
   background: #eee;
-  border: 1px solid #ccc;
-  border-bottom: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .chat-input .user-input {
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 8px;
