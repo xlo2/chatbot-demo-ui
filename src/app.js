@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Jumbotron from 'react-bootstrap/Jumbotron';
@@ -22,9 +22,12 @@ function App() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <Route exact path="/" component={Demo} />
-      <Route path="/doc" component={Documentation} />
-      <Route path="/about" component={About} />
+      <Switch>
+        <Route exact path="/" component={Demo} />
+        <Route path="/doc" component={Documentation} />
+        <Route path="/about" component={About} />
+        <Route component={Demo} />
+      </Switch>
     </Router>
   );
 }
