@@ -1,5 +1,6 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 import Table from 'react-bootstrap/Table';
 
 function Documentation() {
@@ -56,6 +57,7 @@ function Documentation() {
       <h2>Technical Architecture</h2>
       <p>This chatbot demo leverages the <a href="https://github.com/axa-group/nlp.js" target="external">nlp.js</a> open source chatbot engine, built by AXA.
       This engine supports 29 languages and is already used it in production for insurance use cases.</p>
+      <Image src="archi.png" fluid />
       <h2>TODO</h2>
       <ul>
         <li>Add additional languages</li>
