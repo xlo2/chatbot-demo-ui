@@ -1,9 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
 import Chat from './chat'
 import Documentation from './doc'
@@ -43,10 +46,20 @@ function About() {
     <Container>
       <br/>
       <Jumbotron>
-        <h1>About Chatbot Demo</h1>
-        <p>
-          A chatbot demo.
-        </p>
+        <Row>
+          <Col lg="8">
+            <h1>About Chatbot Demo</h1>
+            <p>
+              A simple chatbot project to demonstrate a multi-lingual serverless chatbot running on the AWS platform.
+            </p>
+            <p>
+              Project done by Xavier Loup
+            </p>
+          </Col>
+          <Col lg="4">
+            <Image src="chatbot.svg" fluid />
+          </Col>
+        </Row>
       </Jumbotron>
     </Container>
   );
