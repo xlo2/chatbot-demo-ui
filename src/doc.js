@@ -47,8 +47,8 @@ function Documentation() {
         <tbody>
           <tr>
             <th>Get credit card limit</th>
-            <td style={{textAlign:'center'}}>X<br/>ex: What is my current limit?</td>
-            <td style={{textAlign:'center'}}>X<br/>ex: Quel est mon plafond actuel?</td>
+            <td style={{textAlign:'center'}}>X<br/>ex: What is my current withdrawal limit?</td>
+            <td style={{textAlign:'center'}}>X<br/>ex: Quel est mon plafond de paiement actuel?</td>
             <td></td>
           </tr>
           <tr>
