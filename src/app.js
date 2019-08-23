@@ -7,7 +7,6 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Row from 'react-bootstrap/Row';
-import Table from 'react-bootstrap/Table';
 import Chat from './chat'
 import Documentation from './doc'
 
