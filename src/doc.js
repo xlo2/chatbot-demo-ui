@@ -1,7 +1,10 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
+import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Table from 'react-bootstrap/Table';
+import { Link } from "react-router-dom";
 
 function Documentation() {
   return (
@@ -15,6 +18,12 @@ function Documentation() {
         <li><a href="https://aws.amazon.com/serverless/" target="external">Serverless</a> approach</li>
         <li><b>Automated deployment</b> (CI/CD)</li>
       </ul>
+      <ButtonToolbar>
+        <Link to='/'>
+          <Button variant="primary">Access the chatbot demo</Button>
+        </Link>
+      </ButtonToolbar>
+      <br/>
       <h2>Features</h2>
       <p>The chatbot demo support the following <b>features</b>:</p>
       <ul>
@@ -63,6 +72,7 @@ function Documentation() {
         </tbody>
       </Table>
       <h2>Technical Architecture</h2>
+      <h3>Chatbot engine</h3>
       <p>This chatbot demo leverages the <a href="https://github.com/axa-group/nlp.js" target="external">nlp.js</a> open source chatbot engine, built by AXA.
       This engine supports 29 languages and is already used it in production for insurance use cases.</p>
       <h3>Architecture Diagram</h3>
