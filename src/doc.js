@@ -12,10 +12,10 @@ function Documentation() {
       <br/>
       <h1>Documentation</h1>
       <h2>Goals</h2>
-      <p>The goal of this project is to demonstrate a simple <b>multi-lingual finance chatbot</b> running on the <b>AWS platform</b>.</p>
-      <p>The project is also a <b>technical demo</b>:</p>
+      <p>The application is a simple <b>finance chatbot</b> running on the <b>AWS platform</b> with the following specificities:</p>
       <ul>
-        <li><a href="https://aws.amazon.com/serverless/" target="external">Serverless</a> approach</li>
+        <li><b>Multi-lingual</b></li> 
+        <li><a href="https://aws.amazon.com/serverless/" target="external">Serverless</a> architecture</li>
         <li><b>Automated deployment</b> (CI/CD)</li>
       </ul>
       <ButtonToolbar>
@@ -47,27 +47,27 @@ function Documentation() {
         <tbody>
           <tr>
             <th>Get credit card limit</th>
-            <td style={{textAlign:'center'}}>X<br/>ex: What is my current withdrawal limit?</td>
-            <td style={{textAlign:'center'}}>X<br/>ex: Quel est mon plafond de paiement actuel ?</td>
-            <td style={{textAlign:'center'}}>X<br/>ex: ¿Cuál es mi límite actual?</td>
+            <td style={{textAlign:'center'}}>ex: What is my current withdrawal limit?</td>
+            <td style={{textAlign:'center'}}>ex: Quel est mon plafond de paiement actuel ?</td>
+            <td style={{textAlign:'center'}}>ex: ¿Cuál es mi límite actual?</td>
           </tr>
           <tr>
             <th>Modify credit card limit</th>
-            <td style={{textAlign:'center'}}>X<br/>ex: I want to change my withdrawal limit</td>
-            <td style={{textAlign:'center'}}>X<br/>ex: Je veux augmenter mon plafond de retrait mensuel</td>
-            <td style={{textAlign:'center'}}>X<br/>ex: ¿Pueden cambiar el límite de mi tarjeta de crédito?</td>
+            <td style={{textAlign:'center'}}>ex: I want to change my withdrawal limit</td>
+            <td style={{textAlign:'center'}}>ex: Je veux augmenter mon plafond de retrait mensuel</td>
+            <td style={{textAlign:'center'}}>ex: ¿Pueden cambiar el límite de mi tarjeta de crédito?</td>
           </tr>
           <tr>
             <th>Help</th>
-            <td style={{textAlign:'center'}}>X<br/>ex: What can you do?</td>
-            <td style={{textAlign:'center'}}>X<br/>ex: J'ai besoin d'aide</td>
-            <td style={{textAlign:'center'}}>X<br/>ex: ¿Me puedes ayudar?</td>
+            <td style={{textAlign:'center'}}>ex: What can you do?</td>
+            <td style={{textAlign:'center'}}>ex: J'ai besoin d'aide</td>
+            <td style={{textAlign:'center'}}>ex: ¿Me puedes ayudar?</td>
           </tr>
           <tr>
             <th>Chitchat</th>
-            <td style={{textAlign:'center'}}>X<br/>ex: You are so smart</td>
-            <td></td>
-            <td></td>
+            <td style={{textAlign:'center'}}>ex: You are so smart</td>
+            <td style={{textAlign:'center'}}>n/a</td>
+            <td style={{textAlign:'center'}}>n/a</td>
           </tr>
         </tbody>
       </Table>

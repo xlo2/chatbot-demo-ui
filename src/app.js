@@ -52,7 +52,7 @@ function About() {
               A simple chatbot project to demonstrate a multi-lingual serverless chatbot running on the AWS platform.
             </p>
             <p>
-              Project developed by Xavier Loup with the help of its colleagues. Chatbot image by Clémence.  
+              Project developed by Xavier Loup with the help of its colleagues, leveraging the nlp.js chatbot engine. Chatbot image by Clémence.  
             </p>
           </Col>
           <Col lg="4">
