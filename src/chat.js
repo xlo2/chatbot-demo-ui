@@ -2,7 +2,8 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 
 var createReactClass = require('create-react-class');
-const api_url = 'https://y6la06e1xa.execute-api.eu-west-1.amazonaws.com/Prod/chat';
+const config_data = require('./config.json');
+const api_url = config_data.api_url;
 var context = { };
 
 var ChatMessage = createReactClass({ displayName: "ChatMessage",
@@ -83,9 +84,9 @@ var ChatMessageComposer = createReactClass({ displayName: "ChatMessageComposer",
 var Chat = createReactClass({ displayName: "Chat",
   getInitialState: function () {
     return {
-      messages: [ { message: "Hi! I am your credit card limit assistant. I can speak English, French and Spanish", from: 'bot' },
-        { message: "You can ask me for your current credit card limit or request a modification", from: 'bot' } ],
-      hints: [ { hint: "Help" }, { hint: "Aide" }, { hint: "Ayuda" } ]
+      messages: [ { message: "Hi! I am your Radar assistant.", from: 'bot' },
+        { message: "You can ask me questions about a technology status or info", from: 'bot' } ],
+      hints: [ { hint: "What is the status of Kubernetes?" }, { hint: "Give me more info on Prophet" } ]
      };
   },
   receiveHints: function (hints) {
